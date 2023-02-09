@@ -19,8 +19,9 @@
     "url": "https://github.com/RaulMaya/README-Generator/issues"
   },
   "homepage": "https://github.com/RaulMaya/README-Generator#readme",
-  "description": "",
+  "description": "<h3>RaulMaya</h3>   <h5>Nuevo_Leon_Elections</h5>",
   "dependencies": {
     "inquirer": "^8.2.4"
-  }
+  },
+  "devDependencies": {}
 }
