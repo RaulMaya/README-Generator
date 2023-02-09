@@ -1,0 +1,12 @@
+1. Application repository
+2. Title
+3. Description
+4. Entitled sections
+5. Table of contents
+6. Installation
+7. Usage
+8. License 
+9. Contributions
+10. Tests
+11. Questions
+12. Contact Information
