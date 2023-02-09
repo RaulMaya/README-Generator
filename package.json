@@ -1,0 +1,26 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaulMaya/README-Generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RaulMaya/README-Generator/issues"
+  },
+  "homepage": "https://github.com/RaulMaya/README-Generator#readme",
+  "description": "",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
