@@ -85,7 +85,7 @@ const buildReadMe = (
   Size: ${size} MB\n
   Starred: ${stargazers_count}\n
   Forks: ${forks_count}\n
-  License: ${license.name}\n
+  License: ${license.spdx_id}\n
   LinkedIn: https://www.linkedin.com/in/${linkedin}/\n
   `;
 

@@ -1,5 +1,6 @@
 const axios = require("axios");
 const GithubSearch = require("../githubSearch");
+const LicenseSearch = require("../availableLicenses");
 
 jest.mock("axios");
 
@@ -30,6 +31,23 @@ describe("GithubSearch", () => {
   
         expect(repo.search(user, repoName)).resolves.toEqual({ data: {} });
         expect(axios.get).lastCalledWith(repo.buildUrl(user, repoName));
+      });
+    });
+  });
+  
+
+  describe("LicenseSearch", () => {
+    describe("search", () => {
+      it("Should search the Github API to get the available licenses", () => {
+        const licenses = new LicenseSearch();
+  
+        axios.get.mockReturnValue(
+          new Promise(function(resolve) {
+            resolve({ data: {} });
+          })
+        );
+  
+        expect(licenses.search()).resolves.toEqual({ data: {} });
       });
     });
   });
