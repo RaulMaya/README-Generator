@@ -1,7 +1,7 @@
 
   ID: 589080970
 
-  Project Name: ThermoFood-App
+  Project Name: ThermoFood App
 
   Owner Name: RaulMaya
 

@@ -49,7 +49,7 @@ const buildReadMe = ({
 }, linkedin) =>
   `
   ID: ${id}\n
-  Project Name: ${name.split(/,| /)}\n
+  Project Name: ${name.split(/-|_/).join(' ')}\n
   Owner Name: ${owner.login}\n
   Owner Avatar: ${owner.avatar_url}\n
   URL: ${url}\n
