@@ -60,7 +60,7 @@ const buildReadMe = (
     id,
     name,
     owner,
-    url,
+    html_url,
     description,
     created_at,
     updated_at,
@@ -73,11 +73,44 @@ const buildReadMe = (
   linkedin
 ) =>
   `
-  ID: ${id}\n
-  Project Name: ${name.split(/-|_/).join(" ")}\n
+  <!-- PROJECT LOGO -->
+  <br />
+  <div align="center">
+    <a href="${html_url}">
+      <img src="./assets/images/readMeGenerator.png" alt="Logo" width="200" height="200">
+    </a>\n
+  
+  <h2 align="center">${name.split(/-|_/).join(" ")}</h2>\n
+  <p align="center" style="color:#EAEAEA"> Project ID: ${id}</p>\n
+  <hr>\n
+  ![${language}](https://img.shields.io/badge/language-${language}-yellow.svg)
+  ![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
+  [![License](https://img.shields.io/badge/license-${
+    license.spdx_id
+  }-blue.svg)](https://opensource.org/licenses/${license.spdx_id})\n
+
+  <p align="center">
+  ${description}
+    <br />
+    <br />
+    <a href="${html_url}">Repository</a>    
+    ·
+    <a href="${owner.html_url}">Owner Github</a>
+    ·
+    <a href="https://www.linkedin.com/in/${linkedin}/">My LinkedIn</a>
+  </p>
+</div>
+## :bookmark_tabs: Menu
+
+* [Overview](#overview)
+* [Doc](#doc)
+* [Contributing](#contributing)
+* [Extra](#extra)
+* [Usage](#usage)
+
   Owner Name: ${owner.login}\n
-  Owner Avatar: ${owner.avatar_url}\n
-  URL: ${url}\n
+  <img src="${owner.avatar_url}" style="border-radius:50%; width:50px">\n
+  URL: ${html_url}\n
   Description: ${description}\n
   Created On: ${created_at}\n
   Last Update: ${updated_at}\n
