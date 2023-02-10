@@ -18,25 +18,56 @@ const promptUser = () => {
       name: "repository",
       message: "Enter your GitHub Repository:",
     },
+    {
+      type: "input",
+      name: "linkedin",
+      message: "Enter your LinkedIn Username:",
+      //raul-maya
+    },
   ]);
 };
 
 const repo = new GithubSearch();
 //Nuevo_Leon_Elections
-const buildReadMe = ({ github, repository }) => {
-  return repo.search(github, repository); //.then((res) => res.data);
+const callApi = ({ github, repository, linkedin }) => {
+  repo.search(github, repository).then((res) => writeFile("README.md", buildReadMe(res.data, linkedin)));
 };
 
-const generateHTML = ({ id }) =>
-  `forks: ${id}`;
+const buildReadMe = ({
+  id,
+  name,
+  owner,
+  url,
+  description,
+  created_at,
+  updated_at,
+  size,
+  stargazers_count,
+  language,
+  forks_count,
+  license,
+}, linkedin) =>
+  `
+  ID: ${id}\n
+  Project Name: ${name.split(/,| /)}\n
+  Owner Name: ${owner.login}\n
+  Owner Avatar: ${owner.avatar_url}\n
+  URL: ${url}\n
+  Description: ${description}\n
+  Created On: ${created_at}\n
+  Last Update: ${updated_at}\n
+  Main Language: ${language}\n
+  Size: ${size} MB\n
+  Starred: ${stargazers_count}\n
+  Forks: ${forks_count}\n
+  License: ${license.name}\n
+  LinkedIn: https://www.linkedin.com/in/${linkedin}/\n
+  `;
 
 const init = () => {
   promptUser()
-    // Use writeFile method imported from fs.promises to use promises instead of
-    // a callback function
-    //  writeFile("README.md", buildReadMe(answers))
-    .then((answers) => buildReadMe(answers))
-    .then((res) => writeFile("README.md", generateHTML(res.data)))
+    .then((answers) => callApi(answers))
+    //.then((res) => writeFile("README.md", buildReadMe(res.data)))
     .then(() => console.log("Successfully wrote to README.md"))
     .catch((err) => console.error(err));
 };
