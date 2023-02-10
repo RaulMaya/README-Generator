@@ -22,17 +22,21 @@ const promptUser = () => {
 };
 
 const repo = new GithubSearch();
-
+//Nuevo_Leon_Elections
 const buildReadMe = ({ github, repository }) => {
-  repo.search(github, repository).then((res) => console.log(res.data));
+  return repo.search(github, repository); //.then((res) => res.data);
 };
 
-// Bonus using writeFileSync as a promise
+const generateHTML = ({ id }) =>
+  `forks: ${id}`;
+
 const init = () => {
   promptUser()
     // Use writeFile method imported from fs.promises to use promises instead of
     // a callback function
-    .then((answers) => writeFile("README.md", buildReadMe(answers)))
+    //  writeFile("README.md", buildReadMe(answers))
+    .then((answers) => buildReadMe(answers))
+    .then((res) => writeFile("README.md", generateHTML(res.data)))
     .then(() => console.log("Successfully wrote to README.md"))
     .catch((err) => console.error(err));
 };
