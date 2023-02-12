@@ -71,8 +71,7 @@ const buildReadMe = (
     license,
   },
   linkedin
-) =>
-  `
+) => { return `
   <!-- PROJECT LOGO -->
   <br />
   <div align="center">
@@ -99,28 +98,43 @@ const buildReadMe = (
     ·
     <a href="https://www.linkedin.com/in/${linkedin}/">My LinkedIn</a>
   </p>
-</div>
+</div>\n
 ## :bookmark_tabs: Menu
 
 * [Overview](#overview)
-* [Doc](#doc)
-* [Contributing](#contributing)
-* [Extra](#extra)
+* [Installation](#installation)
 * [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#test)
+* [Contact](#contact)
 
-  Owner Name: ${owner.login}\n
-  <img src="${owner.avatar_url}" style="border-radius:50%; width:50px">\n
-  URL: ${html_url}\n
-  Description: ${description}\n
-  Created On: ${created_at}\n
-  Last Update: ${updated_at}\n
-  Main Language: ${language}\n
-  Size: ${size} MB\n
-  Starred: ${stargazers_count}\n
-  Forks: ${forks_count}\n
-  License: ${license.spdx_id}\n
-  LinkedIn: https://www.linkedin.com/in/${linkedin}/\n
-  `;
+## Overview\n
+Created On: ${new Date(created_at)}\n
+Last Update: ${new Date(updated_at)}\n
+Description: ${description}\n
+Main Language: ${language}\n
+Size: ${size} MB\n
+Starred: ${stargazers_count}\n
+Forks: ${forks_count}\n
+
+## Installation\n
+
+## Usage\n
+
+## License\n
+License: ${license.spdx_id}\n
+
+## Contributing\n
+
+## Tests\n
+
+## Contact\n
+
+* Owner Name: ${owner.login} <img src="${owner.avatar_url}" style="border-radius:50%; width:25px">\n
+* URL: ${html_url}\n
+* LinkedIn: https://www.linkedin.com/in/${linkedin}/\n
+  `;}
 
 const init = () => {
   getLicense()

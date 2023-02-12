@@ -29,36 +29,58 @@
     <a href="https://www.linkedin.com/in/raul-maya/">My LinkedIn</a>
   </p>
 </div>
+
 ## :bookmark_tabs: Menu
 
 * [Overview](#overview)
-* [Doc](#doc)
-* [Contributing](#contributing)
-* [Extra](#extra)
+* [Installation](#installation)
 * [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#test)
+* [Contact](#contact)
 
-  Owner Name: RaulMaya
+## Overview
 
-  <img src="https://avatars.githubusercontent.com/u/79380164?v=4" style="border-radius:50%; width:50px">
+Created On: Thu Feb 09 2023 08:58:22 GMT-0600 (Central Standard Time)
 
-  URL: https://github.com/RaulMaya/README-Generator
+Last Update: Thu Feb 09 2023 10:01:22 GMT-0600 (Central Standard Time)
 
-  Description: You can quickly and easily create a README file by using a command-line application to generate one. This allows the project creator to devote more time to working on the project.
+Description: You can quickly and easily create a README file by using a command-line application to generate one. This allows the project creator to devote more time to working on the project.
 
-  Created On: 2023-02-09T14:58:22Z
+Main Language: JavaScript
 
-  Last Update: 2023-02-09T16:01:22Z
+Size: 152 MB
 
-  Main Language: JavaScript
+Starred: 0
 
-  Size: 94 MB
+Forks: 0
 
-  Starred: 0
 
-  Forks: 0
+## Installation
 
-  License: MIT
 
-  LinkedIn: https://www.linkedin.com/in/raul-maya/
+## Usage
+
+
+## License
+
+License: MIT
+
+
+## Contributing
+
+
+## Tests
+
+
+## Contact
+
+
+* Owner Name: RaulMaya <img src="https://avatars.githubusercontent.com/u/79380164?v=4" style="border-radius:50%; width:25px">
+
+* URL: https://github.com/RaulMaya/README-Generator
+
+* LinkedIn: https://www.linkedin.com/in/raul-maya/
 
   
