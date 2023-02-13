@@ -15,10 +15,8 @@
   <hr>
 
   ![JavaScript](https://img.shields.io/badge/language-JavaScript-yellow.svg)
-
   ![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
-
-  [![License](https://img.shields.io/badge/license-GNU Affero General Public License v3.0-blue.svg)](https://opensource.org/licenses/AGPL-3.0) 
+  [![License](<https://img.shields.io/badge/license-MIT License-blue.svg>)](https://opensource.org/licenses/MIT) 
 
 
   <p align="center">
@@ -49,9 +47,9 @@
 |Created On:|Thu Feb 09 2023 08:58:22 GMT-0600 (Central Standard Time)|
 |Last Update:|Thu Feb 09 2023 10:01:22 GMT-0600 (Central Standard Time)|
 |Main Language:|JavaScript|
-|Size:|153 MB|
-|Starred:|0|
-|Forks:|0|
+|Size:|153 kB|
+|Starred:|0 Stars|
+|Forks:|0 Forks|
 
 Description: You can quickly and easily create a README file by using a command-line application to generate one. This allows the project creator to devote more time to working on the project.
 
@@ -64,13 +62,13 @@ Description: You can quickly and easily create a README file by using a command-
 
 ## License
 
-AGPL-3.0 License
+MIT License
 
-[![License](https://img.shields.io/badge/license-GNU Affero General Public License v3.0-blue.svg)](https://opensource.org/licenses/AGPL-3.0)
+  [![License](<https://img.shields.io/badge/license-MIT License-blue.svg>)](https://opensource.org/licenses/MIT)
 
 About the license:
 
-Permissions of this strongest copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. When a modified version is used to provide a service over a network, the complete source code of the modified version must be made available.
+A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
 
 ## Contributing
 
@@ -81,10 +79,13 @@ Permissions of this strongest copyleft license are conditioned on making availab
 
 ## Tests
 
+<code>Use code in your Markdown file.</code>
 
 ## Contact
 
-* Username: RaulMaya <img src="https://avatars.githubusercontent.com/u/79380164?v=4" style="border-radius:50%; width:25px">
+<img src="https://avatars.githubusercontent.com/u/79380164?v=4" style="border-radius:50%; width:45px">
+
+* Username: RaulMaya 
 
 * Name: Raul Maya
 
