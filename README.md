@@ -88,6 +88,8 @@ A short and simple permissive license with conditions only requiring preservatio
 
 ## Video
 
+https://raw.githubusercontent.com/RaulMaya/README-Generator/master/assets/video/howitworks.mp4
+
  <video controls>
   <source src="assets/video/howitworks.mp4" type="video/mp4">
 </video> 
