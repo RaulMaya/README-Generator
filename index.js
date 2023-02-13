@@ -2,13 +2,11 @@ const inquirer = require("inquirer");
 const GithubSearch = require("./githubSearch");
 const LicenseSearch = require("./availableLicenses");
 const MyLicense = require("./myLicense");
-let licencia;
 
 // Node v10+ includes a promises module as an alternative to using callbacks with file system methods.
 const { writeFile } = require("fs").promises;
 
 // Use writeFileSync method to use promises instead of a callback function
-
 const promptUser = (arr) => {
   return inquirer.prompt([
     {
@@ -50,7 +48,22 @@ const promptUser = (arr) => {
     {
       type: "input",
       name: "test",
-      message: "Command to run tests:", 
+      message: "Command to run tests:",
+    },
+    {
+      type: "input",
+      name: "usage",
+      message: "Which will be the usage of your application:",
+    },
+    {
+      type: "input",
+      name: "installation",
+      message: "Please insert the installation commands:",
+    },
+    {
+      type: "input",
+      name: "briefDescription",
+      message: "Enter a brief description aboout your project:",
     },
   ]);
 };
@@ -86,6 +99,9 @@ const callApi = ({
   linkedin,
   licenses,
   test,
+  usage,
+  installation,
+  briefDescription
 }) => {
   extractLicense(licenses).then((lic) =>
     repo
@@ -93,7 +109,18 @@ const callApi = ({
       .then((res) =>
         writeFile(
           "README.md",
-          buildReadMe(res.data, realname, email, number, linkedin, lic.data, test)
+          buildReadMe(
+            res.data,
+            realname,
+            email,
+            number,
+            linkedin,
+            lic.data,
+            test,
+            usage,
+            installation,
+            briefDescription
+          )
         )
       )
   );
@@ -119,8 +146,15 @@ const buildReadMe = (
   number,
   linkedin,
   newLicense,
-  test
+  test,
+  usage,
+  installation,
+  briefDescription
 ) => {
+  // if (license) {
+  // } else {
+  //   license = newLicense;
+  // }
   license = newLicense;
 
   return `
@@ -137,7 +171,9 @@ const buildReadMe = (
   <hr>\n
   ![${language}](https://img.shields.io/badge/language-${language}-yellow.svg)
   ![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
-  [![License](<https://img.shields.io/badge/license-${license.name}-blue.svg>)](https://opensource.org/licenses/${license.spdx_id}) \n
+  [![License](<https://img.shields.io/badge/license-${
+    license.name
+  }-blue.svg>)](https://opensource.org/licenses/${license.spdx_id}) \n
 
   <p align="center">
   ${description}
@@ -169,11 +205,13 @@ const buildReadMe = (
 |Starred:|${stargazers_count} Stars|
 |Forks:|${forks_count} Forks|
 
-Description: ${description}\n
+Description: ${description}. ${briefDescription}\n
 
 ## Installation\n
+\`${installation}\`
 
 ## Usage\n
+${usage}\n
 
 ## License\n
 ${license.spdx_id} License\n
@@ -190,12 +228,10 @@ ${license.description}
 3. Submit Pull Request with comprehensive description of changes
 
 ## Tests\n
-<code>Use code in your Markdown file.</code>
+<code>${test}</code>
 
 ## Contact\n
-<img src="${
-  owner.avatar_url
-}" style="border-radius:50%; width:45px">\n
+<img src="${owner.avatar_url}" style="border-radius:50%; width:45px">\n
 * Username: ${owner.login} \n
 * Name: ${realname}\n
 * Email: <${email}>\n

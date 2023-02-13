@@ -47,17 +47,21 @@
 |Created On:|Thu Feb 09 2023 08:58:22 GMT-0600 (Central Standard Time)|
 |Last Update:|Thu Feb 09 2023 10:01:22 GMT-0600 (Central Standard Time)|
 |Main Language:|JavaScript|
-|Size:|153 kB|
+|Size:|158 kB|
 |Starred:|0 Stars|
 |Forks:|0 Forks|
 
-Description: You can quickly and easily create a README file by using a command-line application to generate one. This allows the project creator to devote more time to working on the project.
+Description: You can quickly and easily create a README file by using a command-line application to generate one. This allows the project creator to devote more time to working on the project.. The application will help the users, to create an skeleton of a readme.md file, by answering some questions in the terminal.
 
+![howItWorks](assets/images/howitworks.gif)
 
 ## Installation
 
+`npm install`
 
 ## Usage
+
+This application will be used to generate automatically a READ.md file.
 
 
 ## License
@@ -79,7 +83,15 @@ A short and simple permissive license with conditions only requiring preservatio
 
 ## Tests
 
-<code>Use code in your Markdown file.</code>
+<code>npm run test</code>
+
+
+## Video
+
+ <video controls>
+  <source src="assets/video/howitworks.mp4" type="video/mp4">
+</video> 
+
 
 ## Contact
 
@@ -87,7 +99,7 @@ A short and simple permissive license with conditions only requiring preservatio
 
 * Username: RaulMaya 
 
-* Name: Raul Maya
+* Name: Raul Maya Salazar
 
 * Email: <raulmayas20@gmail.com>
 
