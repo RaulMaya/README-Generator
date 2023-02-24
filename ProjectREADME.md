@@ -1,4 +1,3 @@
-
   <!-- PROJECT LOGO -->
   <br />
   <div align="center">
@@ -47,12 +46,13 @@
 |Created On:|Thu Feb 09 2023 08:58:22 GMT-0600 (Central Standard Time)|
 |Last Update:|Thu Feb 09 2023 10:01:22 GMT-0600 (Central Standard Time)|
 |Main Language:|JavaScript|
-|Size:|9913 kB|
+|Size:|158 kB|
 |Starred:|0 Stars|
 |Forks:|0 Forks|
 
-Description: You can quickly and easily create a README file by using a command-line application to generate one. This allows the project creator to devote more time to working on the project.. You can quickly and easily create a README file by using a command-line application to generate one. This allows the project creator to devote more time to working on the project.The application will help the users, to create an skeleton of a readme.md file, by answering some questions in the terminal.
+Description: You can quickly and easily create a README file by using a command-line application to generate one. This allows the project creator to devote more time to working on the project.. The application will help the users, to create an skeleton of a readme.md file, by answering some questions in the terminal.
 
+![howItWorks](assets/images/howitworks.gif)
 
 ## Installation
 
@@ -60,7 +60,7 @@ Description: You can quickly and easily create a README file by using a command-
 
 ## Usage
 
-You can quickly and easily create a README file by using a command-line application to generate one. This allows the project creator to devote more time to working on the project.
+This application will be used to generate automatically a READ.md file.
 
 
 ## License
@@ -84,13 +84,23 @@ A short and simple permissive license with conditions only requiring preservatio
 
 <code>npm run test</code>
 
+
+## Video
+
+https://raw.githubusercontent.com/RaulMaya/README-Generator/master/assets/video/howitworks.mp4
+
+ <video controls>
+  <source src="assets/video/howitworks.mp4" type="video/mp4">
+</video> 
+
+
 ## Contact
 
 <img src="https://avatars.githubusercontent.com/u/79380164?v=4" style="border-radius:50%; width:45px">
 
 * Username: RaulMaya 
 
-* Name: Raul Maya
+* Name: Raul Maya Salazar
 
 * Email: <raulmayas20@gmail.com>
 
@@ -99,5 +109,3 @@ A short and simple permissive license with conditions only requiring preservatio
 * URL: https://github.com/RaulMaya/README-Generator
 
 * LinkedIn: https://www.linkedin.com/in/raul-maya/
-
-  

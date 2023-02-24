@@ -123,6 +123,7 @@ const callApi = ({
           )
         )
       )
+      .catch((err) => console.error(err))
   );
 };
 
@@ -205,7 +206,7 @@ const buildReadMe = (
 |Starred:|${stargazers_count} Stars|
 |Forks:|${forks_count} Forks|
 
-Description: ${description}. ${briefDescription}\n
+Description: ${description} ${briefDescription}\n
 
 ## Installation\n
 \`${installation}\`
